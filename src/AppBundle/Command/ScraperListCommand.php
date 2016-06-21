@@ -79,7 +79,7 @@ class ScraperListCommand extends Command
         }
         $products = $this->productService->getProducts();
 
-        $output->writeln((json_encode($products)));
+        $output->writeln((json_encode($products, JSON_PRETTY_PRINT)));
     }
 
     /**
